@@ -30,7 +30,7 @@ jobs:
         cache: maven
     - name: Build with Maven
       run: |
-        echo "ls -R"
+        echo ls -R
         mvn -B package --file pom.xml
 
     # Optional: Uploads the full dependency graph to GitHub to improve the quality of Dependabot alerts this repository can receive
